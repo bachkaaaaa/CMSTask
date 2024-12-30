@@ -22,7 +22,7 @@ This is a simple Content Management System (CMS) built with Flask and SQLite tha
 2. Create a virtual environment:
 
     
-    python -m venv venv
+    python3 -m venv venv
     
 
 3. Activate the virtual environment:
@@ -45,11 +45,11 @@ This is a simple Content Management System (CMS) built with Flask and SQLite tha
 ## Database Setup
 
 1. **Create the database**: Run the following Python code to create the database and the required tables:
+ # Use this in Terminal 
+  flask shell   
 
-  flask shell    # Use this in Terminal 
-
-
-  from app import db  #Then copy following commands in the shell
+# Then copy following commands in the shell  
+  from app import db
   db.create_all()  
     
 
@@ -57,8 +57,6 @@ This is a simple Content Management System (CMS) built with Flask and SQLite tha
 
 1. **Start the application**: Run the Flask application:
 
-    ```bash
-    flask run
-    ```
+   python3 run.py
 
 2. Visit `http://127.0.0.1:5000` in your web browser to access the CMS.
