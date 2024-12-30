@@ -15,7 +15,7 @@ instance/
 
 # Database files
 *.sqlite3
-db/
+
 
 # Configuration files (if you don't want them in the repo)
 *.env
