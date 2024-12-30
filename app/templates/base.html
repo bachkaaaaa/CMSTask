@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My App{% endblock %}</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        nav {
+            background-color: #2c3e50;
+            padding: 1rem;
+            margin-bottom: 2rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.5rem;
+        }
+        .container {
+            padding: 0 1rem;
+        }
+        .search-box {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .search-box input {
+            padding: 8px;
+            width: 300px;
+            margin-right: 10px;
+        }
+        .search-box button {
+            padding: 8px 16px;
+        }
+        .word-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .word-card {
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .word-title {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+        .word-translation {
+            color: #666;
+            margin-bottom: 10px;
+        }
+        .word-example {
+            margin-bottom: 15px;
+        }
+        .button-group {
+            display: flex;
+            justify-content: space-between;
+        }
+        .button {
+            padding: 5px 10px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            text-decoration: none;
+            color: white;
+        }
+        .edit-button {
+            background-color: #3498db;
+        }
+        .delete-button {
+            background-color: #e74c3c;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 8px;
+        }
+        .bold-label {
+        font-weight: bold;
+    }
+    .label {
+        font-weight: bold;
+        font-size: 1.1em;
+        color: #333;
+        margin-bottom: 5px;
+        display: inline-block;
+    }
+
+    .search-box label {
+        margin-right: 10px;
+    }
+
+    .word-title label, .word-translation label, .word-example label {
+        display: block;
+        margin-top: 10px;
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="{{ url_for('app.index') }}">My App</a>
+    </nav>
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+# Python bytecode files
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# Flask instance folder (contains sensitive data)
+instance/
+
+# Database files
+*.sqlite3
+db/
+
+# Configuration files (if you don't want them in the repo)
+*.env
+*.flaskenv
+
+# PyCharm or other IDE settings
+.idea/
+
+# VS Code settings
+.vscode/
+
+# Flask migrations folder (if using Flask-Migrate)
+migrations/
+
+# Log files
+*.log
+
+# Test coverage reports
+.coverage
+*.coveragerc
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Distribution / packaging
+*.tar.gz
+*.zip
+*.whl
+
+# Secrets and environment variables (usually in a .env or config file)
+*.env
+.env/
+
