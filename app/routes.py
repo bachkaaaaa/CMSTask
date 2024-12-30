@@ -1,8 +1,7 @@
 from flask import Blueprint, render_template,request,redirect,url_for
 from app.models import Word
 from app import db
-
-app = Blueprint("app", __name__)
+from db.load_data import load_initial_data; app = Blueprint("app", __name__)
 @app.before_app_request
 def before_first():
     # Load initial data from the JSON file if not already loaded
