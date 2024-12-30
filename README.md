@@ -50,6 +50,7 @@ This is a simple Content Management System (CMS) built with Flask and SQLite tha
 
 # Then copy following commands in the shell  
   from app import db
+  
   db.create_all()  
     
 
