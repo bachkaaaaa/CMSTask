@@ -14,6 +14,8 @@ This is a simple Content Management System (CMS) built with Flask and SQLite tha
 
     
     git clone https://github.com/bachkaaaaa/CMSTask.git
+
+
     cd CMSTask
     
 
