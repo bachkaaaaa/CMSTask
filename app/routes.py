@@ -1,6 +1,7 @@
 from flask import Blueprint, render_template,request,redirect,url_for
 from app.models import Word
 from app import db
+from db.load_data import load_initial_data;
 
 app = Blueprint("app", __name__)
 @app.before_app_request
