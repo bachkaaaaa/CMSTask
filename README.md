@@ -13,8 +13,8 @@ This is a simple Content Management System (CMS) built with Flask and SQLite tha
 1. Clone the repository:
 
     
-    git clone https://github.com/your-username/your-repo-name.git
-    cd your-repo-name
+    git clone https://github.com/bachkaaaaa/CMSTask.git
+    cd CMSTask
     
 
 2. Create a virtual environment:
