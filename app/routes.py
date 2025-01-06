@@ -2,6 +2,7 @@ from flask import Blueprint, render_template,request,redirect,url_for
 from app.models import Word
 from app import db
 from sqlalchemy import or_  # Add this import
+from db.load_data import load_initial_data;
 
 from db.load_data import load_initial_data;
 app = Blueprint("app", __name__)
