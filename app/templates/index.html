@@ -13,15 +13,19 @@
     {% for word in words %}
     <div class="word-card">
         <div class="word-title">
-            <label for="word-{{ word.id }}" class="bold-label">Word:</label>
+            <label for="word-{{ word.id }}" class="bold-label">Word in Russian:</label>
             <span id="word-{{ word.id }}">{{ word.word }}</span>
         </div>
-        <div class="word-translation">
-            <label for="translation-{{ word.id }}" class="bold-label">Translation:</label>
+        <div class="word-title">
+            <label for="word-{{ word.id }}" class="bold-label">Example sentence for Russian word:</label>
+            <span id="word-{{ word.id }}">{{ word.word_example_sentence }}</span>
+        </div>
+        <div class="word-title">
+            <label for="translation-{{ word.id }}" class="bold-label">Word in Finnish:</label>
             <span id="translation-{{ word.id }}">{{ word.translation }}</span>
         </div>
-        <div class="word-example">
-            <label for="example-{{ word.id }}" class="bold-label">Example Sentence:</label>
+        <div class="word-title">
+            <label for="example-{{ word.id }}" class="bold-label">Example sentence for Finnish word:</label>
             <span id="example-{{ word.id }}">{{ word.example_sentence }}</span>
         </div>
         <div class="button-group">

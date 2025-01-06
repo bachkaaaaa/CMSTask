@@ -5,17 +5,22 @@
     <h2 style="margin-bottom: 20px;">Edit Word</h2>
     <form method="POST">
         <div class="form-group">
-            <label for="word">Word</label>
+            <label for="word">Word in Russian:</label>
             <input type="text" id="word" name="word" value="{{ word.word }}" required>
+        </div>
+
+        <div class="form-group">
+            <label for="word_example_sentence">Example sentence for Russian word:</label>
+            <input type="text" id="word_example_sentence" name="word_example_sentence" value="{{ word.word_example_sentence }}" required>
         </div>
         
         <div class="form-group">
-            <label for="translation">Translation</label>
+            <label for="translation">Word in Finnish:</label>
             <input type="text" id="translation" name="translation" value="{{ word.translation }}" required>
         </div>
         
         <div class="form-group">
-            <label for="example_sentence">Example Sentence</label>
+            <label for="example_sentence">Example sentence for Finnish word:</label>
             <textarea id="example_sentence" name="example_sentence" rows="3">{{ word.example_sentence }}</textarea>
         </div>
         
